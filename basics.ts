@@ -1,4 +1,8 @@
-function add(n1:number,n2:number,showRes:Boolean,phrase:string = ""){
+
+
+
+
+function addN(n1:number,n2:number,showRes:Boolean,phrase:string = ""){
 
 
   if(showRes === true){
@@ -13,8 +17,8 @@ const num1:number = 5;
 const num2:number = 2.8;
 
 const printResult:boolean = true;
+let resultPhrase = "Result is :";
 
-
-const res = add(num1,num2,printResult);
+const res = addN(num1,num2,printResult);
 
 // console.log(res);

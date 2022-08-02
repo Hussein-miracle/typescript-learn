@@ -1,21 +1,21 @@
-type Person = {
-  name: string;
-  age: number;
-};
+let userInput: unknown;
+let userName: string;
 
-const person= {
-  name: "Mirac",
-  age: 30,
-  hobbies:["Sports" , "Cooking" , "Exercising"],
-};
+userInput = 5;
+userInput = "Milo";
 
-
-
-let favActivities: Array<string>;
-
-favActivities = ["sports"];
-console.log(person.name);
-
-for(const hobby of person.hobbies){
-  console.log(hobby);
+if (typeof userInput === "string") {
+  userName = userInput;
 }
+
+function generateError(message: string, code: number): never {
+  throw {
+    message,
+    errorCode: code,
+  };
+}
+
+const result = generateError("An error occured!.", 500);
+
+
+console.log(result);
